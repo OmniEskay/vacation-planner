@@ -27,17 +27,22 @@ const Explore = () => {
                 ? "bg-blue-600 text-white"
                 : "bg-gray-200 hover:bg-gray-300 text-gray-800"
             }`}
+            aria-label={`Filter by ${cat}`}
           >
             {cat}
           </button>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {filteredDestinations.map((destination) => (
-          <DestinationCard key={destination.id} destination={destination} />
-        ))}
-      </div>
+      {filteredDestinations.length === 0 ? (
+        <p className="text-center text-gray-500">No destinations available in this category.</p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {filteredDestinations.map((destination) => (
+            <DestinationCard key={destination.id} destination={destination} />
+          ))}
+        </div>
+      )}
     </main>
   );
 };
