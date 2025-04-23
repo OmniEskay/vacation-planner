@@ -1,35 +1,13 @@
-import React from "react";
-import React, { useState } from "react"
+import React from 'react';
+
+import { useState } from 'react';
+import {useParams} from 'react-router-dom';
 
 function DestinationPage() {
-    const [selectDestination, setSelectedDestination] = useState(null);
-
-    const handleDestinationClick = (destination);
-
-    setSelectedDestination(destination);{
-
-    };
-    return (
-        <div className= "min-h-screen bg-gray-50 p-4">
-
-         <h1 className="text-4xl font-bold text-center text-blue-700 mb-6">
-            
-
-            </h1> 
-             <div className= "grid grid-cols-1 md:grid-cols-3 gap-4">
-                //list of destinations
-                <div className="col-span-1">
-                    <h2 className = "text - 2xl font-semibold mb-4 text-gray-800">
-                        Available Destinations
-                    </h2>
-                </div>
-                </div> 
-        </div>
-    )
+    const { id } = useParams();// get destination id from url
+    const destinationId= parseInt(id, 10); // convert id to number
+    const selectedDestination = destinationsData.find(dest => dest.id ===destinationId);//find destination
+    
+    const [tripList, setTripList] = useState([]); // state to store trip list
+    
 }
-
-export default DestinationPage;
-
-
-
-
