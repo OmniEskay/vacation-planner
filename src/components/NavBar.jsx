@@ -1,4 +1,4 @@
-
+// src/components/NavBar.jsx
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ const NavBar = () => {
             </NavLink>
           </div>
 
-
+          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <NavLink
               to="/"
@@ -53,7 +53,7 @@ const NavBar = () => {
             </NavLink>
           </div>
 
-
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}

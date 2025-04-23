@@ -3,12 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
-import { TripProvider } from './context/TripContext';
+import TripContext from './context/TripContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TripProvider>
+    <TripContext>
       <App />
-    </TripProvider>
+    </TripContext>
   </React.StrictMode>
 );
