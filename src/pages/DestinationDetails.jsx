@@ -9,7 +9,7 @@ const DestinationCard = ({ destination, onSave, onBookNow }) => {
   const navigate = useNavigate();
   const primaryImage = destination.images[0];
 
-  // Use actual rating from destination 
+   
   const rating = destination.rating || 0;
   const reviews = destination.reviews || 0;
   const price = destination.price ? `$${destination.price.toLocaleString()}` : '---';
@@ -39,7 +39,7 @@ const DestinationCard = ({ destination, onSave, onBookNow }) => {
       aria-label={`View details for ${destination.name}`}
       role="article"
     >
-      {/* Image with overlays */}
+      
       <div className="card-image-container">
         <img 
           src={primaryImage} 
@@ -65,7 +65,7 @@ const DestinationCard = ({ destination, onSave, onBookNow }) => {
         </button>
       </div>
 
-      {/* Destination Info */}
+      
       <div className="card-content">
         <div className="card-header">
           <h3 className="destination-name">{destination.name}</h3>
@@ -74,7 +74,7 @@ const DestinationCard = ({ destination, onSave, onBookNow }) => {
           </div>
         </div>
 
-        {/* Rating */}
+        
         <div className="rating-container" aria-label={`Rating: ${rating} out of 5`}>
           <div className="stars">
             {[...Array(5)].map((_, i) => (
@@ -96,7 +96,7 @@ const DestinationCard = ({ destination, onSave, onBookNow }) => {
 
         <p className="destination-description">{destination.description}</p>
         
-        {/* Action Buttons */}
+       
         <div className="action-buttons">
           <button 
             className="book-now-button"
@@ -121,7 +121,7 @@ const DestinationCard = ({ destination, onSave, onBookNow }) => {
   );
 };
 
-// Complete PropTypes definition
+
 DestinationCard.propTypes = {
   destination: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
