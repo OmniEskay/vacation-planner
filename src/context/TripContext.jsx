@@ -25,20 +25,28 @@ export const TripProvider = ({ children }) => {
 
 
   const addDestination = (destination) => {
-    if (!destination || typeof destination.id === 'undefined') {
-        console.error("Attempted to add invalid destination:", destination);
-        toast.error("Could not add destination: Invalid data.");
-        return;
+    if (!destination) {
+      console.error("Attempted to add invalid destination:", destination);
+      toast.error("Could not add destination: Invalid data.");
+      return;
     }
-
+  
+    // Assign a fallback ID if none exists
+    const destinationWithId = {
+      ...destination,
+      id: destination.id ?? Date.now()
+    };
+  
     setTripItems(prevItems => {
-      const isAlreadyInTrip = prevItems.some(item => item.id === destination.id);
+      const isAlreadyInTrip = prevItems.some(item => item.id === destinationWithId.id);
+  
       if (isAlreadyInTrip) {
-        toast.error(`${destination.name || 'Destination'} is already in your trip!`);
-        return prevItems; 
+        toast.error(`${destinationWithId.name || 'Destination'} is already in your trip!`);
+        return prevItems;
       }
-      toast.success(`${destination.name || 'Destination'} added to your trip!`);
-      return [...prevItems, destination]; 
+  
+      toast.success(`${destinationWithId.name || 'Destination'} added to your trip!`);
+      return [...prevItems, destinationWithId];
     });
   };
 
