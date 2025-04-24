@@ -37,24 +37,24 @@ export default function HomePage() {
       setFeaturedDestinations([
         {
           id: 1,
-          name: "Bali",
-          country: "Indonesia",
+          name: "Tokyo",
+          country: "Japan",
           description: "Tropical paradise with beautiful beaches and vibrant culture.",
           price: 140000,
           imageUrl: "/api/placeholder/400/300"
         },
         {
           id: 2,
-          name: "Paris",
-          country: "France",
+          name: "Bern",
+          country: "Switzeland",
           description: "The city of love with iconic landmarks and exquisite cuisine.",
           price: 180000,
           imageUrl: "/api/placeholder/400/300"
         },
         {
           id: 3,
-          name: "Tokyo",
-          country: "Japan",
+          name: "Vienna",
+          country: "Austria",
           description: "Blend of traditional culture and ultramodern attractions.",
           price: 220000,
           imageUrl: "/api/placeholder/400/300"
