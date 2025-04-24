@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import DestinationPage from './components/DestinationPage';
 
+
 function App() {
   return (
     <Routes>

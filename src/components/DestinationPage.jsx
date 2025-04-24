@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import DestinationDetails from '../pages/DestinationDetails'; 
+import DestinationDetails from '../data/DestinationAreas';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function DestinationPage() {
   const { id } = useParams();
@@ -24,8 +26,10 @@ function DestinationPage() {
   const handleTripToggle = () => {
     if (tripList.includes(destinationId)) {
       setTripList(tripList.filter(dest => dest !== destinationId));
+      toast.info(`${selectedDestination.name} removed from trip`);
     } else {
       setTripList([...tripList, destinationId]);
+      toast.success(`${selectedDestination.name} added to trip`);
     }
   };
 
@@ -51,13 +55,14 @@ function DestinationPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           {selectedDestination.images?.slice(0, 4).map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              alt={`${selectedDestination.name} ${index + 1}`}
-              className="w-full h-48 object-cover rounded-md"
-              onError={(e) => (e.target.src = "/assets/placeholder.jpg")} // Fallback for broken images
-            />
+            <div key={index} className="aspect-video overflow-hidden rounded-md">
+              <img
+                src={img}
+                alt={`${selectedDestination.name} ${index + 1}`}
+                className="w-full h-48 object-cover rounded-md"
+                onError={(e) => (e.target.src = "/assets/placeholder.jpg")}
+              />
+            </div>
           ))}
         </div>
 
@@ -76,6 +81,9 @@ function DestinationPage() {
           {isInTripList ? 'Remove from Trip' : 'Add to Trip'}
         </button>
       </div>
+
+      {/* Toast Notification Container */}
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </div>
   );
 }
