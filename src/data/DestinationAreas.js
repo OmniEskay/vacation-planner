@@ -1,42 +1,84 @@
-
-const Destinations = [
+const destinations = [
     {
       id: 1,
-      name: "Santorini, Greece",
-      category: "Romantic Getaway",
-      description: "Famous for its white-washed buildings and blue domes, Santorini offers stunning sunsets and picturesque views over the Aegean Sea.",
-      images: [
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-        "https://images.unsplash.com/photo-1549880189-5c0d58b30a1e",
-        "https://images.unsplash.com/photo-1609838464994-261b6d546baf",
-        "https://images.unsplash.com/photo-1587682134809-d3c6b91c9a4b"
-      ]
+      name: "Bali",
+      category: "Tropical Paradise",
+      description: "Soak in Bali's stunning beaches, beautiful scenery.",
+      images: [ 
+        "src/assets/destinations/bali/WhatsApp Image 2025-04-23 at 10.50.57.jpeg",
+        "src/assets/destinations/bali/WhatsApp Image 2025-04-23 at 10.50.58 (1).jpeg", 
+        "src/assets/destinations/bali/WhatsApp Image 2025-04-23 at 10.50.58.jpeg",
+         "src/assets/destinations/bali/WhatsApp Image 2025-04-23 at 10.50.59.jpeg",
+         "src/assets/destinations/bali/WhatsApp Image 2025-04-23 at 10.50.58 (2).jpeg"
+      ],
     },
     {
       id: 2,
-      name: "Kyoto, Japan",
-      category: "Cultural Experience",
-      description: "A blend of traditional temples, beautiful gardens, and rich cultural history makes Kyoto a must-visit destination in Japan.",
+      name: "Maldives",
+      category: "Island Escape",
+      description: "Turquoise waters, spice tours, and culture await in Maldives.",
       images: [
-        "https://images.unsplash.com/photo-1555685812-4b943f1cb0eb",
-        "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4",
-        "https://images.unsplash.com/photo-1526483360417-66e159d58e5e",
-        "https://images.unsplash.com/photo-1528722828814-77b4f05307d2"
-      ]
+       "src/assets/destinations/zanzibar/WhatsApp Image 2025-04-23 at 11.10.57.jpeg",
+         "src/assets/destinations/zanzibar/WhatsApp Image 2025-04-23 at 11.10.58 (1).jpeg", 
+         "src/assets/destinations/zanzibar/WhatsApp Image 2025-04-23 at 11.10.58.jpeg",
+          "src/assets/destinations/zanzibar/WhatsApp Image 2025-04-23 at 11.10.59 (1).jpeg",
+          "src/assets/destinations/zanzibar/WhatsApp Image 2025-04-23 at 11.10.59.jpeg"
+      ],
     },
     {
       id: 3,
-      name: "Banff National Park, Canada",
-      category: "Nature & Adventure",
-      description: "Experience the stunning Canadian Rockies, turquoise lakes, and outdoor activities like hiking, canoeing, and skiing in Banff.",
+      name: "Japan",
+      category: "Cultural Adventure",
+      description: "Land of timeless tradition and cutting-edge innovation. A cultural journey like no other.",
       images: [
-        "https://images.unsplash.com/photo-1508923567004-3a6b8004f3d9",
-        "https://images.unsplash.com/photo-1567113463309-6589f4564ef6",
-        "https://images.unsplash.com/photo-1596464716121-b5fc30b6f2bb",
-        "https://images.unsplash.com/photo-1542038784456-8d56b8591a4b"
-      ]
-    }
+        "src/assets/destinations/japan/WhatsApp Image 2025-04-23 at 13.23.58.jpeg", 
+        "src/assets/destinations/japan/WhatsApp Image 2025-04-23 at 13.23.59 (1).jpeg",
+        "src/assets/destinations/japan/WhatsApp Image 2025-04-23 at 13.23.59 (2).jpeg",
+         "src/assets/destinations/japan/WhatsApp Image 2025-04-23 at 13.23.59.jpeg",
+         "src/assets/destinations/japan/WhatsApp Image 2025-04-23 at 13.24.00.jpeg"
+      ],
+    },
+    {
+      id: 4,
+      name: "Budapest",
+      category: "Historical Charm",
+      description: "Enjoy thermal baths, castles, and vibrant night scenes on the Danube.",
+      images: [
+        "/assets/destinations/budapest/1.jpg",
+        "/assets/destinations/budapest/2.jpg",
+        "/assets/destinations/budapest/3.jpg",
+        "/assets/destinations/budapest/4.jpg",
+        "/assets/destinations/budapest/5.jpg"
+      ],
+    },
+    {
+      id: 5,
+      name: "Australia",
+      category: "Wild & Free",
+      description: "Surf the Gold Coast, dive the Great Barrier Reef, and meet kangaroos.",
+      images: [
+       "src/assets/destinations/australia/WhatsApp Image 2025-04-23 at 12.45.10.jpeg",
+        "src/assets/destinations/australia/WhatsApp Image 2025-04-23 at 12.45.11.jpeg",
+         "src/assets/destinations/australia/WhatsApp Image 2025-04-23 at 12.45.14 (1).jpeg",
+          "src/assets/destinations/australia/WhatsApp Image 2025-04-23 at 12.45.14.jpeg",
+          "src/assets/destinations/australia/WhatsApp Image 2025-04-23 at 12.45.15.jpeg"
+      ],
+    },
+    {
+      id: 6,
+      name: "Switzerland",
+      category: "Mountain Majesty",
+      description: "Think chocolate, snow-capped Alps, and scenic train rides.",
+      images: [
+       "src/assets/destinations/switzerland/WhatsApp Image 2025-04-23 at 13.22.43.jpeg", 
+       "src/assets/destinations/switzerland/WhatsApp Image 2025-04-23 at 13.22.43 (1).jpeg",
+        "src/assets/destinations/switzerland/WhatsApp Image 2025-04-23 at 13.22.42.jpeg", 
+        "src/assets/destinations/switzerland/WhatsApp Image 2025-04-23 at 13.22.44 (1).jpeg", 
+        "src/assets/destinations/switzerland/WhatsApp Image 2025-04-23 at 13.22.44 (2).jpeg", 
+        "src/assets/destinations/switzerland/WhatsApp Image 2025-04-23 at 13.22.44.jpeg"
+      ],
+    },
   ];
   
-  export default Destinations;
+  export default destinations;
   
