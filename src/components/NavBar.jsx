@@ -16,20 +16,18 @@ const NavBar = () => {
     }`;
 
   return (
-    <nav className="bg-indigo-600">
+    <nav className="bg-indigo-600 shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <NavLink to="/" className="text-white text-2xl font-bold">
-          TravelMate
+        <NavLink to="/" className="text-white text-2xl font-extrabold tracking-wide">
+          Dream Vacation Planner
         </NavLink>
 
-        {/* Desktop menu */}
         <div className="hidden md:flex space-x-6">
           <NavLink to="/" className={navLinkClasses}>Home</NavLink>
           <NavLink to="/explore" className={navLinkClasses}>Explore</NavLink>
           <NavLink to="/my-trip" className={navLinkClasses}>My Trip</NavLink>
         </div>
 
-        {/* Mobile menu toggle */}
         <button
           onClick={toggleMenu}
           className="md:hidden text-white focus:outline-none"
@@ -43,7 +41,6 @@ const NavBar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-indigo-700`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <NavLink to="/" className={navLinkClasses} onClick={toggleMenu}>Home</NavLink>

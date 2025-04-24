@@ -10,15 +10,15 @@ const Explore = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Include 'All' dynamically if needed, or keep hardcoded
+  
   const [categories, setCategories] = useState(["All"]);
 
   const sortOptions = [
     { value: "name-asc", label: "Name (A–Z)" },
     { value: "name-desc", label: "Name (Z–A)" },
-    // Price sorting options remain commented out as 'price' is not in db.json
-    // { value: "price-asc", label: "Price (Low to High)" },
-    // { value: "price-desc", label: "Price (High to Low)" },
+
+     { value: "price-asc", label: "Price (Low to High)" },
+    { value: "price-desc", label: "Price (High to Low)" },
   ];
 
   // Fetch all destinations
