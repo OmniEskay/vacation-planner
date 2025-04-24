@@ -14,9 +14,9 @@ const destinations = [
     },
     {
       id: 2,
-      name: "Zanzibar",
+      name: "Maldives",
       category: "Island Escape",
-      description: "Turquoise waters, spice tours, and Swahili culture await in Zanzibar.",
+      description: "Turquoise waters, spice tours, and culture await in Maldives.",
       images: [
        "src/assets/destinations/zanzibar/WhatsApp Image 2025-04-23 at 11.10.57.jpeg",
          "src/assets/destinations/zanzibar/WhatsApp Image 2025-04-23 at 11.10.58 (1).jpeg", 
