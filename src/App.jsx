@@ -11,7 +11,7 @@ function App() {
     <TripProvider>
       <Router>
         <Routes>
-            <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout />}>
             <Route index element={<Explore />} /> 
             <Route path="explore" element={<Explore />} /> 
             <Route path="destination/:id" element={<DestinationDetails />} />
