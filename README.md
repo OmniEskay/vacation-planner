@@ -1,12 +1,73 @@
-# React + Vite
+# Dream Vacation Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dream Vacation Planner** is a single-page React web application designed to help users plan and organize their dream vacations. With the ability to explore destinations, view detailed information, and create personalized trip lists, this app provides a seamless experience for travel enthusiasts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Project Description](#project-description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Running the App Locally](#running-the-app-locally)
+- [Folder Structure](#folder-structure)
+- [Future Plans](#future-plans)
+- [Contributors](#contributors)
+- [License](#license)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Project Description
+
+Dream Vacation Planner is a single-page React app that allows users to explore a variety of exciting travel destinations, view detailed information about each one, and create their own personalized dream trip list. The app is built with **Vite**, **React Router**, **Tailwind CSS**, and uses a **JSON server** as a backend to store and manage the trip data.
+
+### Key Features:
+- Explore a list of pre-defined dream destinations.
+- View detailed information about each destination.
+- Add custom destinations via a user-friendly form.
+- Toast notifications on successful actions like adding a destination.
+- A fully responsive layout optimized for both desktop and mobile devices.
+
+---
+
+## Features
+
+- **Destination Exploration:** Browse through a variety of pre-configured travel destinations.
+- **Personalized Trip List:** Add destinations to your personal "My Trip" list and review them anytime.
+- **Destination Details:** View detailed information (like description and images) of each destination.
+- **Add Custom Destinations:** Users can add their own dream destinations to the database.
+- **Toast Notifications:** Real-time success or error notifications powered by `react-hot-toast`.
+- **Responsive Design:** The app adjusts seamlessly across different screen sizes using **Tailwind CSS**.
+
+---
+
+## Technologies Used
+
+- **React** – JavaScript library for building user interfaces.
+- **React Router** – For managing routing and navigation between pages.
+- **Tailwind CSS** – A utility-first CSS framework for fast UI design.
+- **Vite** – A build tool that serves the app for fast development.
+- **JSON Server** – A simple, mock backend used to manage travel destinations.
+- **react-hot-toast** – For user-friendly success/error notifications.
+
+---
+
+## Setup Instructions
+
+### Prerequisites
+- **Node.js** – Ensure you have **Node.js** installed. If not, you can download it from [here](https://nodejs.org/).
+- **Git** – Make sure Git is installed for version control.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/OmniEskay/vacation-planner.git
+
+2. Navigate to the project folder:
+```cd dream-vacation-planner
+```
+3. Install dependencies:
+```npm install
+```
