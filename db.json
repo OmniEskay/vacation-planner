@@ -78,5 +78,14 @@
         "/assets/destinations/Switzerland/Switzerland5.jpg"
       ]
     }
+  ],
+   "contacts": [
+    {
+      "id": "01fd",
+      "name": "John Kimyoski",
+      "email": "johnsmiththefifth110@gmail.com",
+      "message": "Site is fantastic",
+      "submittedAt": "2025-04-25T00:44:57.088Z"
+    }
   ]
 }
