@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import destinationData from "../../public/data/destinationData"; 
+import destinationData from "../data/destinationData"; 
 import DestinationCard from "../components/DestinationCard"; 
 
 const Explore = () => {
